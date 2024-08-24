@@ -1,12 +1,13 @@
+import Lesson from "./Lesson";
 import "./LessonCard.scss";
 import React from "react";
+import { data } from "../../helper/data";
 
-const LessonCard = ({ data }) => {
+const LessonCard = () => {
   return (
-    <div>
-      {data.map((item) => (
-        <p key={item.id}>{item.name}</p>
-      ))}
+    <div className="container">
+      <h1 className="lesson-header">Lesson Reminder</h1>
+      <Lesson data={data} />
     </div>
   );
 };

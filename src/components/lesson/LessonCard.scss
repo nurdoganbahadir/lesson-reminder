@@ -1,0 +1,11 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.container{
+    width: 100%;
+    .lesson-header{
+        text-align: center;
+        margin: 1rem;
+    }
+    
+}
