@@ -4,6 +4,8 @@
 .container {
   width: 100%;
   .lesson-header {
+    font-family: $header-font;
+    color: $text-color;
     text-align: center;
     margin: 1rem;
   }
@@ -15,21 +17,23 @@
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @include flex(center);
     .lessons {
       width: 350px;
       height: 175px;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
+      @include flex(start);
       img {
         width: 100px;
+        border-radius: 10px;
+        height: 100px;
+      }
+      .lesson {
+        color: $text-color;
+        span {
+          color: $text-title-color;
+          font-weight: bolder;
+          font-size: 16px;
+        }
       }
     }
   }
