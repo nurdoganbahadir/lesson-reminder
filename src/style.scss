@@ -3,3 +3,12 @@
 @import "./scss/variables";
 @import "./components/header/Header.scss";
 @import "./components/lesson/LessonCard.scss";
+
+body{
+    background-image: 
+    linear-gradient(
+      269deg in oklab,
+      oklch(75% 0.5 220) -52% -52%, oklch(18% 0.24 0) 100% 42%
+    )
+  ;
+}
