@@ -1,1 +1,15 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
 
+.header {
+  width: 100%;
+  background-color: cornflowerblue;
+  height: 12vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  img {
+    height: 8vh;
+    margin: 1rem;
+  }
+}
