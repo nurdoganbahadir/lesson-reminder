@@ -1,11 +1,36 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.container{
-    width: 100%;
-    .lesson-header{
-        text-align: center;
-        margin: 1rem;
+.container {
+  width: 100%;
+  .lesson-header {
+    text-align: center;
+    margin: 1rem;
+  }
+  .lesson-container {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.288);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .lessons {
+      width: 350px;
+      height: 175px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      img {
+        width: 100px;
+      }
     }
-    
+  }
 }
